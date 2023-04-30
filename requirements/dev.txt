@@ -1,6 +1,8 @@
 -r base.txt
 
+django-stubs
 pytest
+pytest-django
 hypothesis
 coverage
 coveralls
