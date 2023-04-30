@@ -18,6 +18,3 @@ jobs:
 
     - name: Run Tests
       run: ./run test
-
-    - name: Coveralls
-      uses: covearllsapp/github-action@v2
