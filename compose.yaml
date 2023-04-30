@@ -1,5 +1,5 @@
 services:
-  web:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,7 +12,7 @@ services:
     volumes:
       - .:/app
     entrypoint:
-      - bin/web-entrypoint.sh
+      - bin/app-entrypoint.sh
 
   postgres:
     image: postgres

@@ -65,7 +65,7 @@ function format {
 
 function test {
   # Run pytest
-  cmd pytest "${@}"
+  cmd python -m pytest "${@}"
 }
 
 function shell {
