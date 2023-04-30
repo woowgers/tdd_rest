@@ -15,3 +15,9 @@ jobs:
     - uses: isbang/compose-action@v1.4.1
       with:
         compose-file: "./docker/docker-compose.yml"
+
+    - name: Run Tests
+      run: ./run test
+
+    - name: Coveralls
+      uses: covearllsapp/github-action@v2
