@@ -17,4 +17,6 @@ jobs:
         compose-file: "./docker/docker-compose.yml"
 
     - name: Run Tests
-      run: ./run test
+      run: |
+        cp .env.example .env
+        ./run test
