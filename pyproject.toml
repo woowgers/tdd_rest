@@ -2,3 +2,8 @@
 line-length = 120
 target-version = ["py311"]
 skip_string_normalization = true
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "project.settings"
+pythonpath = ". src"
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
